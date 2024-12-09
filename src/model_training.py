@@ -5,15 +5,15 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, roc_auc_score, f1_score, confusion_matrix, classification_report
 
 def initialize_models(random_state=42):
-    '''
+    """
     Initialize machine learning models with predefined hyperparameters.
-    
+
     Parameters:
         random_state (int): Random seed for reproducibility.
-    
+
     Returns:
-        models (dict): Dictionary of initialized models.
-    '''
+        dict: Dictionary of initialized models.
+    """
     models = {
         'RandomForest': RandomForestClassifier(
             n_estimators=100,
@@ -30,7 +30,7 @@ def initialize_models(random_state=42):
     return models
 
 def train_and_evaluate(models, X_train, y_train, X_val, y_val):
-    '''
+    """
     Train and evaluate machine learning models.
 
     Parameters:
@@ -41,8 +41,8 @@ def train_and_evaluate(models, X_train, y_train, X_val, y_val):
         y_val (np.ndarray): Validation target vector.
 
     Returns:
-        results (dict): Dictionary containing evaluation metrics for each model.
-    '''
+        dict: Dictionary containing evaluation metrics for each model.
+    """
     results = {}
     
     for name, model in models.items():
