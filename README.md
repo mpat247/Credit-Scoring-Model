@@ -6,7 +6,7 @@ This project builds a credit scoring pipeline and studies how model performance 
 ## Repository Layout
 - `CreditScoring.ipynb`: End-to-end notebook that ties the workflow together.
 - `src/`: Reusable modules for preprocessing, training, attacks, and defenses.
-- `data/`: Input datasets (not included here).
+- `data/`: Input datasets used for experiments.
 - `models/`: Saved model artifacts.
 - `results/`: Generated plots, tables, and reports from experiments.
 
