@@ -11,11 +11,11 @@ This project builds a credit scoring pipeline and studies how model performance 
 - `results/`: Generated plots, tables, and reports from experiments.
 
 ## High-Level Workflow
-1. **Data preparation**: load data, clean column names, handle missing values, encode categoricals, scale features, and select top features.
+1. **Data preparation**: load data, clean column names, handle missing values, encode categorical variables, scale features, and select top features.
 2. **Model training**: train baseline classifiers (Random Forest and XGBoost).
 3. **Evaluation**: compute standard metrics (accuracy, AUC, F1) and generate reports/plots.
 4. **Data poisoning scenarios**: simulate label flipping, feature manipulation, backdoor injections, and synthetic data injections.
-5. **Defenses**: apply anomaly detection (Isolation Forest, LOF, Autoencoder) and retrain models on filtered data.
+5. **Defenses**: apply anomaly detection (Isolation Forest, Local Outlier Factor, Autoencoder) and retrain models on filtered data.
 6. **Artifacts**: store metrics, plots, and trained models under `results/` and `models/`.
 
 ## Notes
