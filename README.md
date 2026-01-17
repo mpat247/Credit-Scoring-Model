@@ -17,6 +17,3 @@ This project builds a credit scoring pipeline and studies how model performance 
 4. **Data poisoning scenarios**: simulate label flipping, feature manipulation, backdoor injections, and synthetic data injections.
 5. **Defenses**: apply anomaly detection (Isolation Forest, Local Outlier Factor, Autoencoder) and retrain models on filtered data.
 6. **Artifacts**: store metrics, plots, and trained models under `results/` and `models/`.
-
-## Notes
-This README keeps the description intentionally high level and does not include or discuss the experiment results.
